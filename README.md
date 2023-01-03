@@ -11,6 +11,8 @@ The module can be installed with pip: `pip install odoo-repl`.
 The most basic way to enable it is to run
 
 ```python
+odoo.api.Environment._local = env
+odoo.api.Environment._local.environments = env
 import odoo_repl; odoo_repl.enable()
 ```
 
