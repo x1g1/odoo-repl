@@ -17,6 +17,9 @@ import odoo_repl; odoo_repl.enable()
 ```
 
 when in an ordinary `odoo-bin shell` environment or similar. That will make all the features available.
+```shell
+odoo shell -d odoodb --db_host=db -r odoo -w odoo
+```
 
 ## pdb
 
