@@ -8,7 +8,12 @@ The module can be installed with pip: `pip install odoo-repl`.
 
 # Running
 
-The most basic way to enable it is to run
+When in an ordinary `odoo-bin shell` environment or similar. That will make all the features available.
+```shell
+odoo shell -d odoodb --db_host=db -r odoo -w odoo
+```
+
+The most basic way to enable it is to run.
 
 ```python
 odoo.api.Environment._local = env
@@ -16,10 +21,7 @@ odoo.api.Environment._local.environments = env
 import odoo_repl; odoo_repl.enable()
 ```
 
-when in an ordinary `odoo-bin shell` environment or similar. That will make all the features available.
-```shell
-odoo shell -d odoodb --db_host=db -r odoo -w odoo
-```
+
 
 ## pdb
 
